@@ -44,11 +44,10 @@ body * {
 }
 #wrapper {
   display: grid;
-  max-width: 1650px;
+     max-width: 1650px;
   margin: auto;
   background-color: $mainWhiteGrey;
   grid-template-columns: 1fr;
-
   grid-template-areas:
     "header"
     "headerBottom"
@@ -89,18 +88,48 @@ header {
   li {
     margin-left: 9%;
   }
+  #iphoneButtonHeader {
+    list-style: none;
+    a{
+       color: inherit; 
+       text-decoration: none;
+    }
+  }
 }
 headerBottom {
   grid-area: headerBottom;
 }
 #headerBottom {
-  background: url(img/background_16771.png) no-repeat;
-  background-size: cover;
+  background: url(img/background_16771.png)   no-repeat center;
+  background-size: cover !important;
+
   height: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  p {
+    text-align: center;
+  }
+  button {
+    width: 205px;
+height: 50px;
+border: 1px solid rgba(201, 201, 201, 0.5);
+// border: 1px solid #26272d;
+border-radius: 25px;
+a{
+  font-family: Lato;
+font-size: 16px;
+line-height: 1.2;
+
+font-weight: 400;
+color: #26272d;
+}
+  }
+}
+#headerBottom * {
+  max-width: 50%;
+  margin-top: 5.5%;
 }
 nav {
   border-bottom: 1px solid #ccc;
