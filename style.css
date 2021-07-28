@@ -995,9 +995,94 @@ readyToBuy {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* The switch - the box around the slider */
-  /* Hide default HTML checkbox */
-  /* The slider */
+}
+
+#plan #typeOfPlan .switch-button {
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: 30px;
+  overflow: hidden;
+  width: 240px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #26292c;
+  position: relative;
+  padding-right: 120px;
+  position: relative;
+}
+
+#plan #typeOfPlan .switch-button:before {
+  content: "Company";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#plan #typeOfPlan .switch-button-checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+
+#plan #typeOfPlan .switch-button-checkbox:checked + .switch-button-label:before {
+  -webkit-transform: translateX(120px);
+          transform: translateX(120px);
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
+}
+
+#plan #typeOfPlan .switch-button-checkbox + .switch-button-label {
+  margin: 0;
+  position: relative;
+  padding: 15px 0;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+#plan #typeOfPlan .switch-button-checkbox + .switch-button-label:before {
+  content: "";
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+#plan #typeOfPlan .switch-button-checkbox + .switch-button-label .switch-button-label-span {
+  position: relative;
 }
 
 #plan #typeOfPlan h2 {
@@ -1037,68 +1122,6 @@ readyToBuy {
 #plan #typeOfPlan .team a {
   text-decoration: underline;
   color: #267df4;
-}
-
-#plan #typeOfPlan .sliderWrapper {
-  display: inline-block;
-  margin: 24px 24px 24px 24px;
-  position: relative;
-}
-
-#plan #typeOfPlan .sliderWrapper div {
-  display: inline-block;
-  line-height: 60px;
-}
-
-#plan #typeOfPlan .switch {
-  vertical-align: middle;
-  position: relative;
-  display: inline-block;
-  padding: 0px;
-  width: 54px;
-  height: 28px;
-}
-
-#plan #typeOfPlan .switch input {
-  display: none;
-}
-
-#plan #typeOfPlan .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #d7d7d7;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-#plan #typeOfPlan .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 1px;
-  bottom: 1px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-#plan #typeOfPlan input:checked + .slider {
-  background-color: #1fb5ad;
-}
-
-#plan #typeOfPlan input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #1fb5ad;
-          box-shadow: 0 0 1px #1fb5ad;
-}
-
-#plan #typeOfPlan input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  transform: translateX(26px);
 }
 
 #plan #pickUrPlan {
