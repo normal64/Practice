@@ -50,17 +50,18 @@ body * {
   margin: 0;
 }
 
-/* #wrapper {
-  header {
-    border: 1px solid black;
-  }
-  section {
-    border: 1px solid black;
-  }
-  footer {
-    border: 1px solid black;
-  }
-} */
+#wrapper header {
+  border: 1px solid black;
+}
+
+#wrapper section {
+  border: 1px solid black;
+}
+
+#wrapper footer {
+  border: 1px solid black;
+}
+
 .gridTwoHalfs {
   display: -ms-grid;
   display: grid;
@@ -1610,6 +1611,20 @@ footer {
   }
   #iphoneFeatures #iphoneLeft {
     width: 46%;
+  }
+  #plan {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #mapRight {
+    height: 258px;
+  }
+  #mapFeature {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    max-width: 450px;
   }
   nav {
     background: #f1f1f1;

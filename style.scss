@@ -37,7 +37,7 @@ body {
 body * {
   margin: 0;
 }
-/* #wrapper {
+ #wrapper {
   header {
     border: 1px solid black;
   }
@@ -47,7 +47,7 @@ body * {
   footer {
     border: 1px solid black;
   }
-} */
+} 
 .gridTwoHalfs {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1271,25 +1271,35 @@ footer {
   grid-area: footer;
 }
 @media (max-width: 480px) {
-  #headerBottom{
+  #headerBottom {
     max-width: 400px;
     margin-top: 4%;
     align-items: flex-start;
     margin-left: 3%;
     background: none;
-}
-#features {
-  grid-template-columns: 1fr;
-  max-width: 450px;
-}
-#iphoneFeatures{
-  grid-template-columns: 1fr;
-  max-width: 450px;
-  #iphoneLeft {
-    width: 46%;
   }
-}
-  
+  #features {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+  #iphoneFeatures {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    #iphoneLeft {
+      width: 46%;
+    }
+  }
+  #plan {
+    flex-direction: column;
+  }
+  #mapRight {
+    height: 258px;
+  }
+  #mapFeature {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+
   nav {
     background: #f1f1f1;
   }
@@ -1328,10 +1338,8 @@ footer {
 @media (max-width: 1650px) {
   #severalScreens {
     justify-content: center;
-    .secondaryPic{
+    .secondaryPic {
       display: none;
     }
-
   }
-  
 }
