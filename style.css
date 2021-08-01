@@ -50,18 +50,17 @@ body * {
   margin: 0;
 }
 
-#wrapper header {
-  border: 1px solid black;
-}
-
-#wrapper section {
-  border: 1px solid black;
-}
-
-#wrapper footer {
-  border: 1px solid black;
-}
-
+/* #wrapper {
+  header {
+    border: 1px solid black;
+  }
+  section {
+    border: 1px solid black;
+  }
+  footer {
+    border: 1px solid black;
+  }
+} */
 .gridTwoHalfs {
   display: -ms-grid;
   display: grid;
@@ -665,7 +664,7 @@ iphoneScreens {
 }
 
 #readyToBuy #getApp a p {
-  margin-top: -5%;
+  margin-top: -6%;
   font-family: Lato;
   font-size: 12px;
   line-height: 24px;
@@ -1302,7 +1301,7 @@ subscribe {
 
 #footer .footer-distributed h3 {
   color: #ffffff;
-  font: normal 36px 'Open Sans', cursive;
+  font: normal 36px "Open Sans", cursive;
   margin: 0;
 }
 
@@ -1450,8 +1449,8 @@ subscribe {
   height: 50px;
   border-radius: 100px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #footer .footer-icons .facebook .border:hover {
@@ -1479,8 +1478,8 @@ subscribe {
   height: 50px;
   border-radius: 100px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #footer .footer-icons .twitter .border:hover {
@@ -1508,8 +1507,8 @@ subscribe {
   height: 50px;
   border-radius: 100px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #footer .footer-icons .instagram .border:hover {
@@ -1537,8 +1536,8 @@ subscribe {
   height: 50px;
   border-radius: 100px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #footer .footer-icons .dribbble .border:hover {
@@ -1554,8 +1553,8 @@ subscribe {
 }
 
 #footer .footer-icons #social ul li {
-  -webkit-transition: ease .3s;
-  transition: ease .3s;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 
 #footer .footer-icons #social ul:hover > li {
@@ -1590,6 +1589,28 @@ footer {
 }
 
 @media (max-width: 480px) {
+  #headerBottom {
+    max-width: 400px;
+    margin-top: 4%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 3%;
+    background: none;
+  }
+  #features {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+  #iphoneFeatures {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+  #iphoneFeatures #iphoneLeft {
+    width: 46%;
+  }
   nav {
     background: #f1f1f1;
   }
@@ -1629,6 +1650,17 @@ footer {
   }
   nav ul.active li a {
     display: block;
+  }
+}
+
+@media (max-width: 1650px) {
+  #severalScreens {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #severalScreens .secondaryPic {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
